@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: 'Cinzel', Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-gold-base: #D4AF37;
+  --color-champagne: #F5E6C8;
+  --color-midnight: #080A0F;
+  --color-midnight-surface: #0E121B;
+  --color-midnight-card: #131824;
+  --color-midnight-elevated: #1A2130;
+  --color-midnight-border: #242D40;
+  --color-ivory: #F8F6F0;
+  --color-ivory-dim: #A8A69E;
+}
+
+/* Custom subtle luxury styling */
+html {
+  font-family: var(--font-sans);
+  background-color: #080A0F;
+  color: #F8F6F0;
+}
+
+/* Tabular figures for all financial numbers */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Luxury card gold foil gradient */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF0D0 0%, #D4AF37 50%, #AA8220 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-border {
+  border-image: linear-gradient(135deg, rgba(212, 175, 55, 0.4) 0%, rgba(212, 175, 55, 0.1) 100%) 1;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #E5C378 0%, #D4AF37 50%, #9B7823 100%);
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+}
+
+.card-shine {
+  background: linear-gradient(125deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 60%);
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080A0F;
+}
+::-webkit-scrollbar-thumb {
+  background: #242D40;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
